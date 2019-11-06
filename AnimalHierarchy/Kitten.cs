@@ -8,7 +8,7 @@ namespace AnimalHierarchy
 {
     public  class Kitten:Cat
     {
-        public Kitten(string name, int age, string sex, string gender) : base(name, age, "femele", gender)
+        public Kitten(string name, int age, string sex, string gender) : base(name, age, "female", gender)
         {
 
         }

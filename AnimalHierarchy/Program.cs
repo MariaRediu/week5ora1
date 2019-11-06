@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AnimalHierarchy
 {                       /// <summary>
-/// Nu stiu cum sa afisez sexul fiecarui animal ?????
+
 /// </summary>
     class Program
     {
@@ -16,23 +16,23 @@ namespace AnimalHierarchy
             {
                 new Cat("Tom",4,"male","Black Toad"),
                 new Cat ("Aris",7,"male","White Cat"),
-                new Cat("Maya",3,"femele","Black Cat")
+                new Cat("Maya",3,"female","Black Cat")
             };
 
             Dog[] dogs = new Dog[]
             {
                 new Dog("Rexy",7,"male","Labrador"),
-                new Dog("Bella",6,"femele","Cannis"),
-                new Dog("Ira",9,"femele","Saint Bernard")
+                new Dog("Bella",6,"female","Cannis"),
+                new Dog("Ira",9,"female","Saint Bernard")
             };
 
             Frog[] frogs = new Frog[]
             {
                 new Frog("Frogy",23,"male","Frog1"),
-                new Frog("Little",2,"femele","Frog2")
+                new Frog("Little",2,"female","Frog2")
             };
 
-            Kitten kitty = new Kitten("Pisi", 1, "femele", "Black kitty");
+            Kitten kitty = new Kitten("Pisi", 1, "female", "Black kitty");
             Tomcat tom = new Tomcat("Tomy", 2, "male", "White tomcat");
 
             Console.WriteLine(" Cats average age are :" + Cat.CalculateAverange(cats));

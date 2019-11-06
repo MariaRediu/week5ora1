@@ -18,7 +18,7 @@ namespace AnimalHierarchy
 
             set
             {
-                if (value != "male" || value != "female")
+                if (value != "male" && value != "female")
                 {
                     
                    
