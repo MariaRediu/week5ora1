@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace School
 {
-    class Comment
+    public class Comment
     {
         private List<string> input;
         public Comment()

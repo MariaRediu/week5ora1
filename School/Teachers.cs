@@ -4,12 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-  namespace School
+namespace School
 {
     class Teachers : People
     {
-         public Teachers(string name,List<Discipline> disciplines) : base(name)
+        public Teachers(string name, List<Discipline> disciplines) : base(name)
         {
             this.Disciplines = disciplines;
         }
         public List<Discipline> Disciplines { get; set; }
+    }
+}
