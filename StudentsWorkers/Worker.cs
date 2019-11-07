@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StudentsWorkers
 {
-    public class Worker :Human
+    public  class Worker :Human
     {
         public double WeekSalary { get; set; }
         public double WorkHoursPerDay { get; set; }
@@ -16,7 +16,7 @@ namespace StudentsWorkers
             this.WeekSalary = weeksalary;
             this.WeekSalary = workHours;
         }
-        public double MoneyPerHour()
+        public double  MoneyPerHour()
         {
             return WeekSalary / WorkHoursPerDay * 5;
         }

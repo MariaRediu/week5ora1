@@ -46,17 +46,44 @@ namespace StudentsWorkers
               {
                   Console.WriteLine($" {student.Grade} --{student.FirstName}  {student.LastName}");
               }*/
-
-            IEnumerable<Worker> query = workers.OrderByDescending(worker => worker.MoneyPerHour());
-                )
+            Console.WriteLine("STUDENTS");
             Console.WriteLine("List of students order by grade:");
-            var result = from stud in students orderby stud.Grade ,stud.FirstName,stud.LastName select stud;
+            var result = from stud in students orderby stud.Grade, stud.FirstName, stud.LastName select stud;
             foreach (var item in result)
             {
-                Console.WriteLine("{0} {1} {2}",item.Grade,item.FirstName,item.LastName);
+                Console.WriteLine("{0} {1} {2}", item.Grade, item.FirstName, item.LastName);
             }
 
             Console.ReadLine();
+
+            List<Worker> workersList = new List<Worker>();
+
+            var sortedWorker = workersList.OrderByDescending(x => x.MoneyPerHour());
+
+                Console.WriteLine("WORKERS");
+                foreach (var element in sortedWorker)
+                {
+                    Console.WriteLine("Full name: {0}", element.FirstName + " " + element.LastName);
+                    Console.WriteLine("Week salary: " + element.WeekSalary);
+                    Console.WriteLine("Work hours per day: " + element.WorkHoursPerDay);
+                    Console.WriteLine("Money per hours: " + element.MoneyPerHour());
+                    Console.WriteLine();
+                }
+            
+
+             List<Human> mergedList = new List<Human>();
+           
+                var sortedList =from merge in mergedList orderby merge.FirstName, merge.LastName select merge;
+
+           
+                Console.WriteLine(" MERGED LIST");
+                foreach (var element in sortedList)
+                { 
+                    Console.WriteLine($"First name: {element.FirstName} - Last name: {element.LastName}" );
+                }
+
+            Console.ReadLine();
+
         }
     }
 }
